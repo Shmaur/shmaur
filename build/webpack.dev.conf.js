@@ -1,10 +1,15 @@
 'use strict'
+// 工具函数集合
 const utils = require('./utils')
 const webpack = require('webpack')
+// 配置文件
 const config = require('../config')
+// webpack 配置合并插件
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
+// 自动生成 html 并且注入到 .html 文件中的插件
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// webpack错误信息提示插件
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
